@@ -34,4 +34,4 @@ sudo docker exec -it hive-server beeline -u jdbc:hive2://localhost:10000 usernam
 
 echo "executando o notebook"
 
-sudo docker exec -i jupyter-spark bash jupyter nbconvert --to notebook --execute mynotebook.ipynb /mnt/notebooks/projeto_final.ipynb
+sudo docker exec -i jupyter-spark jupyter nbconvert --to notebook --execute mynotebook.ipynb /mnt/notebooks/projeto_final.ipynb
